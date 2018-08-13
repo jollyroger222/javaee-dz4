@@ -1,0 +1,22 @@
+<pretty-config xmlns="http://ocpsoft.org/schema/rewrite-config-prettyfaces"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://ocpsoft.org/schema/rewrite-config-prettyfaces
+                      http://ocpsoft.org/xml/ns/prettyfaces/rewrite-config-prettyfaces.xsd">
+
+    <url-mapping>
+        <pattern value="/tovar" />
+        <view-id value="/tovar.xhtml"/>
+    </url-mapping>
+    <url-mapping>
+        <pattern value="/order" />
+        <view-id value="/order.xhtml"/>
+    </url-mapping>
+    <url-mapping>
+        <pattern value="/tovar-edit" />
+        <view-id value="/tovar-edit.xhtml"/>
+    </url-mapping>
+
+
+
+
+</pretty-config>

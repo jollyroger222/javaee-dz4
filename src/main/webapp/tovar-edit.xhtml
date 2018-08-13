@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>Title</title>
+</h:head>
+<f:metadata>
+    <f:viewParam name="id" value="#{tovarEditController.id}" />
+    <f:viewAction action="#{tovarEditController.init}" />
+</f:metadata>
+<h:body>
+    <h1>EDIT TASK </h1>
+        <h:form>
+
+
+            <p:outputPanel>
+                <p:outputLabel value="NAME" />
+
+            </p:outputPanel>
+
+            <p:messages autoUpdate="true" />
+
+            <p:outputPanel>
+                <p:inputText value="#{tovarEditController.tovar.name}" required="true"/>
+            </p:outputPanel>
+
+            <p:commandButton value="SAVE" action="#{tovarEditController.save}">
+            </p:commandButton>
+
+
+
+
+        </h:form>
+
+    </h:body>
+</html>
